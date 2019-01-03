@@ -1,6 +1,6 @@
 <?php
 
-namespace Plugin\ShippingMessage\Form\Extension;
+namespace Plugin\ShoppingMessage\Form\Extension;
 
 use Symfony\Component\Form\AbstractTypeExtension;
 use Eccube\Form\Type\Shopping\OrderType;
