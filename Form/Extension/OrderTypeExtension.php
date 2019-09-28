@@ -17,6 +17,10 @@ class OrderTypeExtension extends AbstractTypeExtension {
 
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
+        if($options['skip_add_form']) {
+            return;
+        }
+        
         $options = $builder->get('message')->getOptions();
         $options['required'] = true;
         $options['constraints'][] = new Assert\NotBlank;
